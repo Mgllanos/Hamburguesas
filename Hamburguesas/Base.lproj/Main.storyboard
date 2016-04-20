@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VDP-em-9lH"/>
+                        <viewControllerLayoutGuide type="bottom" id="w8Z-Cs-Jb6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuV-BE-BdK">
+                                <rect key="frame" x="61" y="82" width="199" height="30"/>
+                                <state key="normal" title="Quiero una hamburguesa!!!!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9th-w9-nQ7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Países" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-QF-T2t">
+                                <rect key="frame" x="82" y="224" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMB-sl-Viy">
+                                <rect key="frame" x="31" y="318" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aSd-QF-T2t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="RMx-44-GXJ"/>
+                            <constraint firstItem="kuV-BE-BdK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="dxI-Pk-AJU"/>
+                            <constraint firstItem="kuV-BE-BdK" firstAttribute="top" secondItem="VDP-em-9lH" secondAttribute="bottom" constant="62" id="h8t-88-K7r"/>
+                            <constraint firstItem="w8Z-Cs-Jb6" firstAttribute="top" secondItem="UMB-sl-Viy" secondAttribute="bottom" constant="229" id="i6J-gB-RNo"/>
+                            <constraint firstItem="UMB-sl-Viy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="ksn-04-X0H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UMB-sl-Viy" secondAttribute="trailing" constant="33" id="oAi-Zc-VgU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kuV-BE-BdK" secondAttribute="trailing" constant="44" id="pr9-ae-yFx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aSd-QF-T2t" secondAttribute="trailing" constant="52" id="pzc-JZ-uGt"/>
+                            <constraint firstItem="aSd-QF-T2t" firstAttribute="top" secondItem="VDP-em-9lH" secondAttribute="bottom" constant="204" id="sbd-0S-kBc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelHamburguesa" destination="UMB-sl-Viy" id="S1V-3d-8ok"/>
+                        <outlet property="labelPais" destination="aSd-QF-T2t" id="7en-lv-S0X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="281"/>
+        </scene>
+    </scenes>
+</document>
